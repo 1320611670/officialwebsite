@@ -1,0 +1,182 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #root {
+    height: 100%;
+  }
+  .combined-wrapper {
+    padding: 0;
+    background: linear-gradient(135deg, #329fff 1%, #8c00ff 100%);
+    height: 100%;
+    position: relative;
+    width: 100%;
+    
+  }
+  .combined-reload {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+  .combined {
+    color: #fff;
+    width: 316px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .combined-shape {
+    position: relative;
+  }
+  .combined-shape > * {
+    width: 50%;
+    height: 64px;
+    position: absolute;
+    overflow: hidden;
+  }
+  .combined-shape > * > * {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .combined-shape .shape-left {
+    left: 0;
+  }
+  .combined-shape .shape-right {
+    right: 0;
+  }
+  .combined .title {
+    font-size: 70px;
+    letter-spacing: 8px;
+    position: absolute;
+    width: 350px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .combined-bar {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+  }
+  .combined .content {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 95px;
+  }
+  @keyframes Modals {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  .Modal.bubble{
+    transform:scale(0.8);
+    width:12rem;
+    height:4rem;
+    position:absolute;
+    left: 55%;
+    top: 65%;
+    margin-left:-6rem;
+    bottom:2rem;
+    transform: translate(-50%, -50%);
+    animation: Modals 10s;
+    cursor: pointer;
+  }
+  .Modal.bubble .next{
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:.3rem;
+    border-color:#f4dba8 transparent transparent;
+    position:absolute;
+    bottom:0.84rem;
+    right:1.4rem;
+  }
+  .Modal.bubble .w{
+    width:100%;
+    height:1px;
+    background:#f4dba8;
+    position:absolute;
+    left:0;
+  }
+  .Modal.bubble .w.t{
+    transform:translateX(-100%)
+  }
+  .Modal.bubble .w.b{
+    transform:translateX(100%)
+  }
+  .Modal.bubble .h.l{
+    transform:translateY(100%)
+  }
+  .Modal.bubble .h.r{
+    transform:translateY(-100%)
+  }
+  .Modal.bubble .w.b{
+    bottom:0;
+  }
+  .Modal.bubble .h{
+    height:100%;
+    width:1px;
+    background:#f4dba8;
+    position:absolute;
+  }
+  .Modal.bubble .h.r{
+    right:0;
+  }
+  .Modal.bubble .d{
+    width:.5rem;
+    height:.5rem;
+    border-color:#03edff;
+    border-style:solid;
+    position:absolute;
+  }
+  .Modal.bubble .d.lt{
+    border-width:1px 0 0 1px;
+    left:.4rem;
+    top:.4rem;
+    transform:translate(0.4rem,0.4rem);
+  }
+  .Modal.bubble .d.rt{
+    border-width:1px 1px 0 0;
+    right:.4rem;
+    top:.4rem;
+    transform:translate(-0.4rem,0.4rem);
+  }
+  .Modal.bubble .d.lb{
+    border-width:0 0 1px 1px;
+    left:.4rem;
+    bottom:.4rem;
+    transform:translate(0.4rem,-0.4rem);
+  }
+  .Modal.bubble .d.rb{
+    border-width:0 1px 1px 0;
+    right:.4rem;
+    bottom:.4rem;
+    transform:translate(-0.4rem,-0.4rem);
+  }
+  .Modal.bubble .text{
+    color:#f4dba8;
+    font-size:.65rem;
+    padding:.85rem 1.4rem;
+    line-height:1.2rem;
+  }
+  .Modal.bubble .save{
+    color:#fff;
+    font-size:1.75rem;
+    line-height:4rem;
+    text-align:center;
+    position:absolute;
+    width:100%;
+    top:0;
+  }
+  
